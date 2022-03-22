@@ -1,8 +1,24 @@
-import '../styles/globals.css'
-import type { AppProps } from 'next/app'
+import Layout from 'components/Layout/Layout';
+import { AppPropsWithLayout } from 'models';
+import Head from 'next/head';
+import '../styles/globals.css';
 
-function MyApp({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
-}
+const MyApp = ({ Component, pageProps }: AppPropsWithLayout) => {
+    const AppLayout = Component.Layout ?? Layout;
 
-export default MyApp
+    return (
+        <AppLayout>
+            <Head>
+                <title>Next Events</title>
+                <meta name="description" content="NextJS Events" />
+                <meta
+                    name="viewport"
+                    content="initial-scale=1.0, width=device-width"
+                />
+            </Head>
+            <Component {...pageProps} />
+        </AppLayout>
+    );
+};
+
+export default MyApp;
