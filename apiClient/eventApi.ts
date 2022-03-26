@@ -1,4 +1,4 @@
-import { Event, EventFilter } from 'models';
+import { Event, EventFilter } from 'interfaces';
 
 export const fetchAllEvents = async (): Promise<Event[]> => {
     const response = await fetch('http://localhost:4000/events');

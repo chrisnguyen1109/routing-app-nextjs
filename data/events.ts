@@ -1,4 +1,4 @@
-import { Event, EventFilter } from 'models';
+import { Event, EventFilter } from 'interfaces';
 
 export const DUMMY_EVENTS: Readonly<Event>[] = [
     {

@@ -1,6 +1,8 @@
 import Layout from 'components/Layout/Layout';
-import { AppPropsWithLayout } from 'models';
+import { AppPropsWithLayout } from 'interfaces';
 import Head from 'next/head';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import '../styles/globals.css';
 
 const MyApp = ({ Component, pageProps }: AppPropsWithLayout) => {
@@ -17,6 +19,7 @@ const MyApp = ({ Component, pageProps }: AppPropsWithLayout) => {
                 />
             </Head>
             <Component {...pageProps} />
+            <ToastContainer />
         </AppLayout>
     );
 };

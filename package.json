@@ -10,9 +10,11 @@
         "watch:db": "json-server -w data/db.json --port 4000"
     },
     "dependencies": {
+        "mongoose": "^6.2.8",
         "next": "12.1.0",
         "react": "17.0.2",
         "react-dom": "17.0.2",
+        "react-toastify": "^8.2.0",
         "sharp": "^0.30.3"
     },
     "devDependencies": {

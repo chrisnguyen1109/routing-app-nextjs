@@ -1,5 +1,5 @@
 import Button from 'components/Button/Button';
-import { AvailbleMonth, AvailbleYear } from 'models';
+import { AvailbleMonth, AvailbleYear } from 'interfaces';
 import { FormEvent, useRef } from 'react';
 import { monthOptions, yearOptions } from 'utils/filterOptions';
 import classes from './EventSearch.module.css';

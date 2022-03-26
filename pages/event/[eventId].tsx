@@ -1,8 +1,9 @@
 import { fetchEventById, fetchFeatureEvents } from 'apiClient/eventApi';
+import EventComment from 'containers/EventDetail/EventComment/EventComment';
 import EventContent from 'containers/EventDetail/EventContent/EventContent';
 import EventLogistics from 'containers/EventDetail/EventLogistics/EventLogistics';
 import EventSummary from 'containers/EventDetail/EventSummary/EventSummary';
-import { Event } from 'models';
+import { Event } from 'interfaces';
 import { GetStaticPaths, GetStaticProps, NextPage } from 'next';
 
 interface EventDetailPageProps {
@@ -17,6 +18,7 @@ const EventDetailPage: NextPage<EventDetailPageProps> = ({ event }) => {
             <EventContent>
                 <p>{event.description}</p>
             </EventContent>
+            <EventComment eventId={event.id} />
         </>
     );
 };

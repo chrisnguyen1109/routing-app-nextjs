@@ -2,7 +2,7 @@ import Button from 'components/Button/Button';
 import AddressIcon from 'components/Icons/AddressIcon';
 import ArrowRightIcon from 'components/Icons/ArrowRightIcon';
 import DateIcon from 'components/Icons/DateIcon';
-import { Event } from 'models';
+import { Event } from 'interfaces';
 import Image from 'next/image';
 import formattedDate from 'utils/formattedDate';
 import classes from './EventItem.module.css';

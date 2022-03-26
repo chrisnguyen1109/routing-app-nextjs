@@ -1,4 +1,4 @@
-import { AvailbleMonth, AvailbleYear } from 'models';
+import { AvailbleMonth, AvailbleYear } from 'interfaces';
 
 interface YearOption {
     value: AvailbleYear;

@@ -27,3 +27,5 @@ export type AvailbleMonth =
     | '10'
     | '11'
     | '12';
+
+export type Callback = () => void;

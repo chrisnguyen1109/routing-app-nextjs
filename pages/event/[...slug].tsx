@@ -3,7 +3,7 @@ import Button from 'components/Button/Button';
 import ErrorAlert from 'components/ErrorAlert/ErrorAlert';
 import EventList from 'containers/Event/EventList/EventList';
 import ResultTitle from 'containers/Event/ResultTitle/ResultTitle';
-import { Event } from 'models';
+import { Event } from 'interfaces';
 import { GetServerSideProps, NextPage } from 'next';
 import Head from 'next/head';
 

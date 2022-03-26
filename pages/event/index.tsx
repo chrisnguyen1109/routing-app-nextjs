@@ -1,7 +1,7 @@
 import { fetchAllEvents } from 'apiClient/eventApi';
 import EventList from 'containers/Event/EventList/EventList';
 import EventSearch from 'containers/Event/EventSearch/EventSearch';
-import { AvailbleMonth, AvailbleYear, Event } from 'models';
+import { AvailbleMonth, AvailbleYear, Event } from 'interfaces';
 import { GetStaticProps, NextPage } from 'next';
 import Head from 'next/head';
 import { useRouter } from 'next/router';

@@ -1,4 +1,4 @@
-import { Event } from 'models';
+import { Event } from 'interfaces';
 import EventItem from '../EventItem/EventItem';
 import classes from './EventList.module.css';
 
