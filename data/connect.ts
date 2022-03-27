@@ -8,17 +8,17 @@ const connect =
             return handler(req, res);
         }
 
-        if (!process.env.DATABASE || !process.env.DATABASE_PASSWORD) {
+        if (
+            !process.env.DATABASE ||
+            !process.env.DATABASE_PASSWORD ||
+            !process.env.DATABASE_USERNAME
+        ) {
             return res.status(503).json({
                 message: 'Connect database failed!',
             });
         }
 
-        const db = process.env.DATABASE.replace(
-            '<password>',
-            process.env.DATABASE_PASSWORD
-        );
-        await mongoose.connect(db);
+        await mongoose.connect(process.env.DATABASE);
 
         console.log('Connect database successfully!');
 
